@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AAEDT 台灣可及環境設計協會</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="/src/assets/index.css" /> -->
     <style>
     /* 頁面初始隱藏，防止 CSS/JS 尚未載入時的內容閃爍 (FOUC) */
     html { opacity: 0; }
@@ -24,9 +25,8 @@
     }
 </style>
 
-    <script type="module" crossorigin src="./assets/main-miYFfgkY.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-DiEMDV6D.css">
-    <link rel="stylesheet" crossorigin href="./assets/main-tn0RQdqM.css">
+    <script type="module" crossorigin src="./assets/main-QojkjVYE.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-D7I-L_mi.css">
   </head>
 
   <body>
@@ -219,7 +219,7 @@
 
 
       <!-- 這是建立在我們的頁面是 HTML 跟之後會用 WP 之上的作法。如果是 SPA 的話，作法稍有不同，但是吳老師你可以直接問我，到時候我一起看跟講解 -->
-      <main class="main index_main" id="main-content">
+      <main class="main index_main mobile_gap_40px" id="main-content">
         <a
           href="#C"
           title="中央內容區塊"
@@ -232,16 +232,68 @@
           <span aria-hidden="true">:::</span>
         </a>
         <h1 class="sr-only">首頁</h1>
-        <section class="hero-section">
+        <section class="hero-section mobile_margin_bottom_40px">
           <!-- 這裡的 alt 要比較描述 (it needs to be more descriptive)，因為這有代表協會的相關的含意，更詳細可能要和立婷確認，其實 Copilot 現在可以給的 alt text 還滿好的 -->
           <div class="section_1280px">
             <div class="section_1040px gap_20px">
-              <img
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      class="d-block w-100"
+                      src="img/hero/hero.svg"
+                      alt="可及協會在環境不要障礙的活動時的團體照，總共12位成員，每個人帶著笑容並拿著綠色盆栽一起提倡環境不要障礙。"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100"
+                      src="img/hero/hero.svg"
+                      alt="可及協會在環境不要障礙的活動時的團體照，總共12位成員，每個人帶著笑容並拿著綠色盆栽一起提倡環境不要障礙。"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100"
+                      src="img/hero/hero.svg"
+                      alt="可及協會在環境不要障礙的活動時的團體照，總共12位成員，每個人帶著笑容並拿著綠色盆栽一起提倡環境不要障礙。"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <!-- <img
                 class="hero-img"
                 src="img/hero/hero.svg"
                 alt="可及協會在環境不要障礙的活動時的團體照，總共12位成員，每個人帶著笑容並拿著綠色盆栽一起提倡環境不要障礙。"
-              />
-              <div class="card-container">
+              /> -->
+              <div class="card-container mobile_padding_left_right_20px">
                 <div class="feature-card">
                   <div class="action-card action-card--1">
                     <div class="text-wrapper-2">我要改善環境</div>
@@ -271,9 +323,9 @@
           </div>
         </section>
 
-        <section class="about-us-section">
+        <section class="about-us-section mobile_margin_bottom_40px">
           <div class="section_1280px">
-            <div class="section_1040px gap_40px mobile_padding_left_right_20px">
+            <div class="section_1040px gap_40px mobile_padding_left_right_20px mobile_gap_20px">
               <div class="title-group">
                 <h2 class="main-title">認識我們</h2>
                 <div class="title-line-bg"></div>
@@ -300,7 +352,7 @@
         <section class="outreach-section arc-top arc-bottom">
           <div class="content-section campaign_overview_section section_1280px">
             <div class="section_1040px gap_40px mobile_padding_left_right_20px">
-              <div class="page-header">
+              <div class="page-header mobile_gap_20px">
                 <div class="title-group">
                   <h2 class="main-title">推廣行動</h2>
                   <div class="title-line-bg"></div>
@@ -323,10 +375,9 @@
                     />
                   </div>
                   <div class="frame-15">
-                    <div class="frame-16">
-                      <div class="text-wrapper-12">改善環境</div>
+                    <div class="card-meeting-tag-wrap">
+                      <span class="tag">改善環境</span>
                     </div>
-                    <!-- 先放 GOOG 在這作範例 -->
                     <h3 class="text-wrapper-9">
                       <a href="https://www.google.com/">長照2.0居家環境改造</a>
                     </h3>
@@ -341,8 +392,8 @@
                     />
                   </div>
                   <div class="frame-15 card">
-                    <div class="frame-16">
-                      <div class="text-wrapper-12">改善環境</div>
+                    <div class="card-meeting-tag-wrap">
+                      <span class="tag">改善環境</span>
                     </div>
                     <h3 class="text-wrapper-9"><a href="#">公共空間無障礙環境改善</a></h3>
                   </div>
@@ -356,8 +407,8 @@
                     />
                   </div>
                   <div class="frame-15 card">
-                    <div class="frame-16">
-                      <div class="text-wrapper-12">改善環境</div>
+                    <div class="card-meeting-tag-wrap">
+                      <span class="tag">改善環境</span>
                     </div>
                     <h3 class="text-wrapper-9"><a href="#">可及性設計理念教育推廣</a></h3>
                   </div>
@@ -373,9 +424,9 @@
           </div>
         </section>
 
-        <section class="donate-section">
+        <section class="donate-section mobile_margin_top_40px mobile_margin_bottom_40px">
           <div class="section_1280px">
-            <div class="section_1040px gap_40px mobile_padding_left_right_20px">
+            <div class="section_1040px gap_40px mobile_padding_left_right_20px mobile_gap_20px">
               <div class="title-group">
                 <h2 class="main-title">贊助我們</h2>
                 <div class="title-line-bg"></div>
@@ -403,7 +454,7 @@
 
         <section class="video-section arc-top arc-bottom">
           <div class="section_1280px">
-            <div class="section_1040px gap_40px mobile_padding_left_right_20px">
+            <div class="section_1040px gap_40px mobile_padding_left_right_20px mobile_gap_20px">
               <div class="title-group">
                 <h2 class="main-title">媒體專區</h2>
                 <div class="title-line-bg"></div>
@@ -437,15 +488,25 @@
             </div>
           </div>
         </section>
-        <section class="partners-section">
+        <section class="partners-section mobile_margin_top_40px mobile_margin_bottom_40px">
           <div class="section_1280px">
-            <div class="section_1040px gap_40px mobile_padding_left_right_20px">
+            <div class="section_1040px gap_40px mobile_padding_left_right_20px mobile_gap_20px">
               <div class="title-group">
                 <h2 class="main-title">合作夥伴</h2>
                 <div class="title-line-bg"></div>
               </div>
-              <img class="frame-25 hide-mobile" src="img/partners.svg" alt="partners" />
-              <img class="frame-25 show-mobile" src="img/mobile-partners.svg" alt="partners" />
+              <div class="frame-25">
+                <img src="img/partners/Frame133.svg" alt="partners" />
+                <img src="img/partners/Frame134.svg" alt="partners" />
+                <img src="img/partners/Frame140.svg" alt="partners" />
+                <img src="img/partners/Frame134.svg" alt="partners" />
+                <img src="img/partners/Frame133.svg" alt="partners" />
+                <img src="img/partners/Frame134.svg" alt="partners" />
+                <img src="img/partners/Frame140.svg" alt="partners" />
+                <img src="img/partners/Frame134.svg" alt="partners" />
+              </div>
+              <!-- <img class="frame-25 hide-mobile" src="img/partners.svg" alt="partners" />
+              <img class="frame-25 show-mobile" src="img/mobile-partners.svg" alt="partners" /> -->
             </div>
           </div>
         </section>
@@ -538,4 +599,3 @@
 
   </body>
 </html>
-
